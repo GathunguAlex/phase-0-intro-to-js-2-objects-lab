@@ -14,13 +14,15 @@ function destructivelyUpdateWithKeyAndValue(employee, key, value)
 employee[key] = value;
 return updateEmployee
 }
-function deleteFromEmployeeByKey(employee, key){
+function deleteFromEmployeeByKey(employee, key)
+{
     let deleteEmployee = {...employee};
     delete deleteEmployee[key];
     return deleteEmployee;
 }
-function destructivelyDeleteFromEmployeeByKey(employee, key){
+function destructivelyDeleteFromEmployeeByKey(employee, key)
+{
     let destroyEmployeeDelete = employee;
     delete destroyEmployeeDelete[key];
-    return destroyEmployeeDelete;
+  return destroyEmployeeDelete;
 }
